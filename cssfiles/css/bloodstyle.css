@@ -1,0 +1,19 @@
+.Bb_header {
+    background: cadetblue;
+    padding-top: 15px;
+}
+
+.Bb_contact ul {
+    list-style: none;
+    display: flex;
+}
+
+.Bb_social ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+.Bb_contact ul li {
+    margin: 10px;
+}

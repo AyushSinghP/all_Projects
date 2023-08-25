@@ -1,0 +1,181 @@
+.bb_header {
+    padding: 20px;background: #4a3a3a;
+}
+
+.bb_contact {
+    filter: invert(100%);
+    padding-top: 9px;
+}
+
+.bb_contact p {color: aqua;}
+
+.register {
+    display: flex;
+    align-content: stretch;
+    justify-content: flex-end;
+    padding-top: 15px;
+}
+
+.register button {width: 91px;height: 43px;}
+
+.register button {
+    border: 2px solid #f1ece2;
+    margin: 5px;
+    font-size: 20px;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+}
+.register button:hover {
+    background-color: #00ffff00;
+    color:red;
+    border:2px solid red;
+}
+.menubar {
+    background: #ff5e00;
+    padding: 16px;
+    padding-top: 22px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu ul a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: aliceblue;
+}
+.Donations {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 21;
+    padding-right: 40px;
+}
+
+.Donations button {
+    color: #ff5e00;
+    background-color: #4a3a3a;
+    border-radius: 14px;
+}
+
+.menu ul a:hover {
+    color: #4a3a3a;
+}
+.Donations button:hover {
+    background: #ff7b2e;
+    color: #4a3a3a;
+}
+.pragraph {
+    text-align: center;
+    color: #f1f8f0;
+    font-size: 25px;
+    margin-top: 82px;
+}
+.circle {
+     width: 300px;
+     height: 270px;
+     background: #cfb2b24f;
+     margin: 10%;
+     border-radius: 50%;
+     position: relative;
+     margin-inline: auto;
+     transition: all;
+}
+.circle:hover {
+    background-color: #ffffff73;
+    box-shadow: 0px 0px 39px red;
+}
+
+.circle .logo1 {
+    position: absolute;
+    width: inherit;
+    height: auto;
+    top: 27%;
+    text-align: center;
+    color: #f4f0ff;
+    /* filter: invert(100%); */
+}
+
+.circle1 {
+    width: 300px;
+    height: 270px;
+    background: #cfb2b24f;
+    margin: 10%;
+    border-radius: 50%;
+    position: relative;
+    margin-inline: auto;
+    transition: all;
+}
+.circle1:hover {
+    background-color: #ffffff73;
+    box-shadow: 0px 0px 39px red;
+}
+
+.circle1 .logo2 {
+    position: absolute;
+    width: inherit;
+    height: auto;
+    top: 27%;
+    text-align: center;
+    color: #f4f0ff;
+}
+.backgroung1 {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+}
+
+.backgroung1 img {
+    width: 100%;
+    position: absolute;
+    bottom: -215px;
+    margin-bottom: -8px;
+}
+.card {
+    margin-inline: auto;
+    margin-top: 53px;
+}
+.card button {border: 3px solid #f5f4f4;border-radius: 13px;background: #ff5e0000;color: white;}
+
+.card button:hover {
+    color: #4a3a3a;
+    border: 2px solid #4a3a3a;
+}
+
+p.card-text {
+    color: #4a3a3a;
+}
+.card-body {
+    background: #f44f56;
+    text-align: center;
+}
+
+.animation .animation1 {
+    padding-left: 292px;
+    position: absolute;
+    bottom: -490px;
+}
+
+.animation .animation2 {
+    padding-left: 180px;
+    position: absolute;
+    bottom: -490px;
+}
+.contant1 {
+    background: aliceblue;
+    margin-top: 91px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+    align-items: center;
+}

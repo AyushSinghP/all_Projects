@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0px;
+}
+
+.Pr_header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    position: relative;
+}
+
+.Pr_header .Pr_logo {
+    width: 30%;
+    text-align: center;
+    z-index: 1;
+}
+
+.Pr_header .Pr_logo img {
+    width: 232px;
+}
+
+.Pr_header .Pr_menu {
+    width: 70%;
+    z-index: 1;
+}
+
+.Pr_header .Pr_menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.Pr_header .Pr_menu ul a {
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.Pr_header .Pr_menu ul a:hover {
+    color: brown;border: 2px solid red;
+    border-radius: 10px;
+}
+.Pr_background {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+.Pr_background img {
+    width: 100%;
+}

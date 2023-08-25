@@ -1,0 +1,425 @@
+<html>
+  <head>
+    <title>Projection</title>
+	<style>
+	body {
+    margin: 0;
+    padding: 0px;
+}
+
+.slider {
+    background-color:#008bd4;
+}
+
+.slider .Header {
+    display: inline-block;
+    margin-left: 57px;
+}
+
+.slider .Header ul {
+    display: flex;
+    margin: 11px;
+}
+
+.slider .Header ul li {
+    list-style: none;
+    margin: 9px;
+    color: white;
+}
+
+.slider .Header ul li img {
+    width: 15px;
+    margin-right: 5px;
+    filter: invert(100%);
+}
+
+.slider .social {
+    display: inline-block;
+    position: absolute;
+    left: 75%;
+    top: 2.5;
+}
+
+.slider .social ul {
+    display:flex;
+}
+
+.slider .social ul li {
+   list-style:none;
+   margin-left:25px;
+}
+
+.slider .social ul li a img {
+    width: 18px;
+    filter: invert(100%);
+}
+.shader {
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+
+.shader .logo {
+    width: 30%;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	padding-left: 25px;
+}
+
+dew {
+    position: absolute;
+    top: 11%;
+    left: 20px;
+}
+
+.menu {}
+
+.shader .menu {width: 70%;}
+
+.shader .menu ul {display: flex;justify-content: space-around;padding-top: 24px;}
+
+.shader .menu ul li {
+    list-style: none;
+}
+
+.shader .menu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.shader .menu ul li a:hover {
+    color:yellow;
+}
+.select_photo {}
+
+.select_photo .pera {
+    color: black;
+    font-size: 38px;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -10%);
+    text-align: center;
+    text-transform: initial;
+}
+
+.select_photo .pera p {
+    margin: 2px;
+}
+
+.select_photo .button {}
+
+.select_photo .pera button {
+    background: #ad0100;
+    margin: 0px;
+    margin-left: -4px;
+    margin-top: 13px;
+    padding: 9px 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.select_photo .pera button:hover {
+    color: black;
+    background-color: wheat;
+}
+
+#course h2 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+#course h2 label {
+  color: #018dd1;
+}
+.box {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 4%;
+}
+
+.box .\31 box {
+    border: 1px solid black;
+    max-width: 22%;
+    padding: 14px;
+    margin: 17px;
+    text-align: center;
+}
+
+.box .\31 box:hover {
+    box-shadow: 0px 10px 20px -6px gray;
+    color: blue;
+    transition: all 2s;
+}
+
+.box .\31 box .head {
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+.box .\31 box .discription {
+    text-align: center;
+}
+
+.box .\31 box .discription ul {
+    list-style: none;
+    border-bottom: 2px solid black;
+}
+
+.box .\31 box .discription ul li {
+    padding: 5px;
+    color: black;
+}
+
+.box .\31 box .enrol button {
+    padding: 11px 25px;
+    border-radius: 5px;
+    border: 4px solid black;
+    background-color: white;
+    margin-top: 5px;
+}
+.box .\32 box {
+    border: 1px solid black;
+    max-width: 22%;
+    padding: 14px;
+    margin: 17px;
+    text-align: center;
+}
+
+.box .\32 box:hover {
+    box-shadow: 0px 10px 20px -6px gray;
+    color: blue;
+    transition: all 2s;
+}
+
+.box .\32 box .head {
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+.box .\32 box .discription {
+    text-align: center;
+}
+
+.box .\32 box .discription ul {
+    list-style: none;
+    border-bottom: 2px solid black;
+}
+
+.box .\32 box .discription ul li {
+    padding: 5px;
+    color: black;
+}
+
+.box .\32 box .enrol button {
+    padding: 11px 25px;
+    border-radius: 5px;
+    border: 4px solid black;
+    background-color: white;
+    margin-top: 5px;
+}
+.box .\33 box {
+    border: 1px solid black;
+    max-width: 22%;
+    padding: 14px;
+    margin: 17px;
+    text-align: center;
+}
+
+.box .\33 box:hover {
+    box-shadow: 0px 10px 20px -6px gray;
+    color: blue;
+    transition: all 2s;
+}
+
+.box .\33 box .head {
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+.box .\33 box .discription {
+    text-align: center;
+}
+
+.box .\33 box .discription ul {
+    list-style: none;
+    border-bottom: 2px solid black;
+}
+
+.box .\33 box .discription ul li {
+    padding: 5px;
+    color: black;
+}
+
+.box .\33 box .enrol button {
+    padding: 11px 25px;
+    border-radius: 5px;
+    border: 4px solid black;
+    background-color: white;
+    margin-top: 5px;
+}
+.partner {
+    background-color: aqua;
+    
+}
+
+.partner .phead {
+    text-align: center;
+	padding: 10px
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.partner .phead h2 label {
+    color: blueviolet;
+}
+.partner .pimage {
+    text-align: center;
+	padding: 20px;
+}
+
+.partner .pimage a {
+    margin: 30px;
+}
+	</style>
+  </head>
+  <body>  
+    <div class="slider">
+	    <div class="Header">
+	     <ul>
+		   <li>
+		     <img src="/image/phone.png" width="25px">
+			 9977763947,6265690236
+		   </li>
+		   <li>
+		     <a href="#"><img src="/image/email.png" width="25px"></a>
+			 ayushsinghpanwar234@gmail.com
+		   </li>
+		 </ul>
+		</div>
+	    <div class="social">
+	     <ul>
+		  <li><a href="#" ><img src="/image/twitter.png" width="25px"></a></li>
+		  <li><a href="#" ><img src="/image/whatsapp.png" width="25px"></a></li>
+		  <li><a href="#"><img src="/image/instagram.png" width="25px"></a></li>
+		 </ul>
+	    </div>
+	</div>
+	<div class="shader">
+	    <div class="logo">
+	     <img src="/image/projection.png" width="250px">
+	    </div>
+        <div class="menu">
+	     <ul>
+		   <li><a href="#">Home</li></a>
+		   <li><a href="#">About Us</li></a>
+		   <li><a href="#">Gallery</li></a>
+		   <li><a href="#">All Courses</li></a>
+		   <li><a href="#">Placement</li></a>
+		   <li><a href="#">Contact Us</li></a>
+		 </ul>
+	    </div>
+	</div>
+	<div class="select_photo">
+	    <div class="photo">
+		  <img src="/image/web.png" width="100%">
+		<div class="pera">
+		  <p>Success Comes throught Effort</p>
+		  <button>See More</button>
+		</div>
+		</div>
+	</div>
+	<div id="course">
+	  <h2><label>Popular</label> Course</h2>
+	</div>
+	<div class="box">
+	  <div class="1box">
+	    <div class="head">
+		  <h2>Web Development & Designing</h2>
+		</div>
+		<div class="discription">
+		  <ul>
+		    <li>HTML5</li>
+            <li>CSS3 + ADVANCE CSS</li>
+		    <li>PHP( CORE + ADVANCE )</li>
+			<li>MY SQL</li>
+			<li>JAVASCRIPT + JQUERY</li>
+			<li>BOOTSTRAP 4</li>
+			<li>WORDPRESS</li>
+		  </ul>
+		</div>
+		<div class="enrol">
+		  <button>Enroll Now</button>
+		</div>
+	  </div>
+	   <div class="2box">
+	    <div class="head">
+		  <h2>Basic Hardware And Networking</h2>
+		</div>
+		<div class="discription">
+		  <ul>
+		   <li>Introduction Of Hardware </li>
+           <li>Os Installation</li>
+           <li>Harddisk Partitioning And Formatting</li>
+           <li>Network Setup And Installation</li>
+           <li>Mother Board Repairing</li>
+           <li>Pc / Laptop Repairing And Formatting</li>
+           <li>Basic Of Mobile Repairing</li>
+		  </ul>
+		</div>
+		<div class="enrol">
+		  <button>Enroll Now</button>
+		</div>
+	  </div>
+	   <div class="3box">
+	    <div class="head">
+		  <h2>Core & Advance Java Training</h2>
+		</div>
+		<div class="discription">
+		  <ul>
+		    <li>HTML5</li>
+            <li>CSS3 + ADVANCE CSS</li>
+		    <li>JAVA ( CORE + ADVANCE )</li>
+			<li>SWING + AWT</li>
+			<li>ORACLE + SQL</li>
+			<li>SERVLET</li>
+			<li>JSP</li>
+		  </ul>
+		</div>
+		<div class="enrol">
+		  <button>Enroll Now</button>
+		</div>
+	  </div>
+	</div>
+	<div class="partner">
+	 <div class="phead">
+	  <h2><label>Our</label> Partner</h2>
+	 </div>
+	 <div class="pimage">
+	   <marquee>
+	   <a href="#"><img src="/image/1.png"></a>
+	   <a href="#"><img src="/image/2.png"></a>
+	   <a href="#"><img src="/image/3.png"></a>
+	   <a href="#"><img src="/image/4.png"></a>
+	   <a href="#"><img src="/image/5.png"></a>
+	   </marquee>
+	 </div>
+  </body>
+</html>

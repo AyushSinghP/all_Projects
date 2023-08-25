@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    let user = prompt("Enter S, W or G");
+    let cpu1 = Math.floor(Math.random() * 3);
+    let cpu = ["S", "W", "G"][cpu1];
+
+    const match = (cpu, user)=>{
+        if (cpu === user){
+            return "Nobody Win"
+        }
+        else if (cpu === "S" && user === "W"){
+            return "cpu"
+        }
+        else if (cpu === "S" && user === "G"){
+            return "user"
+        }
+        else if (cpu === "G" && user ==="S"){
+            return "cpu"
+        }
+        else if (cpu === "G" && user === "W"){
+            return "user"
+        }
+        else if (cpu === "W" && user === "S"){
+            return "user"
+        }
+        else if (cpu === "W" && user === "G"){
+            return "cpu"
+        }
+    }
+    let result = match(cpu, user);
+    document.write(`CUP:${cpu} <br/> User:${user} <br/> The Winner is: ${result.toUpperCase()}`)
+</script>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="heading1">Hello World</h1>
+    <h1 class="heading2">Hello World</h1>
+    <h1 class="heading3">Hello World</h1>
+    <h1 class="heading4">Hello World</h1>
+    <h1 class="heading5">Hello World</h1>
+    <h1 class="heading6">Hello World</h1>
+</body>
+<script>
+    const heading1 = document.querySelector(".heading1");
+    const heading2 = document.querySelector(".heading2");
+    const heading3 = document.querySelector(".heading3");
+    const heading4 = document.querySelector(".heading4");
+    const heading5 = document.querySelector(".heading5");
+    const heading6 = document.querySelector(".heading6");
+    // setTimeout(() => {
+    //     heading1.textContent = "heading1";
+    //     heading1.style.color = "blue";
+    //     setTimeout(() => {
+    //         heading2.textContent = "heading2";
+    //         heading2.style.color = "red";
+    //         setTimeout(() => {
+    //             heading3.textContent = "heading3";
+    //             heading3.style.color = "green";
+    //             setTimeout(() => {
+    //                 heading4.textContent = "heading4";
+    //                 heading4.style.color = "violet";
+    //                 setTimeout(() => {
+    //                     heading5.textContent = "heading5";
+    //                     heading5.style.color = "yellow";
+    //                     setTimeout(() => {
+    //                         heading6.textContent = "heading6";
+    //                         heading6.style.color = "orange";
+    //                     }, 1000)
+    //                 }, 1000)
+    //             }, 1000)
+    //         }, 1000)
+    //     }, 1000)
+    // }, 1000)
+
+    // function changeText(element, text, color, time){
+    //     setTimeout(()=>{
+    //         element.textContent = text;
+    //         element.style.color = color;
+    //     },time)
+    // }
+    // changeText(heading1, "one", "violet", 1000);
+    // changeText(heading2, "two", "red", 2000);
+    // changeText(heading3, "three", "green", 3000);
+    // changeText(heading4, "four", "green", 4000);
+    // changeText(heading5, "five", "green", 5000);
+    // changeText(heading6, "six", "green", 6000);
+    // const friedRice = ['coffee', 'chips', 'vegetable', 'salt', 'rice'];
+    // const RicePromice = new Promise((resolve, reject) => {
+    //     if (friedRice.includes('vegetable') && friedRice.includes('salt') && friedRice.includes('rice')) {
+    //         resolve('Fried Rice');
+    //     }
+    //     else {
+    //         reject('this is an error');
+    //     }
+    // })
+    // RicePromice.then((ready) => {
+    //     console.log('Ready', ready);
+    // }).catch((error) => {
+    //     console.log(error);
+    // })
+    // setTimeout(()=>{
+    //     console.log('This is time out');
+    // },0)
+    // for (i = 0;i < 100; i++){
+    //     console.log(Math.random(), i);
+    // }
+    // function myPromise(){
+    //     const friedRice = ['coffee', 'chips', 'vegetable', 'salt', 'rice'];
+    //     return new Promise((resolve,reject)=>{
+    //         setTimeout(()=>{
+    //             if(friedRice.includes('vegetable')&& friedRice.includes('salt') && friedRice.includes('rice')){
+    //                 resolve('work is done');
+    //             }
+    //             else{
+    //                 reject('work is not done');
+    //                 }
+    //             },1000)
+    //         })
+    //     }
+    //     myPromise()
+    //     .then((done)=>{
+    //         console.log(done);
+    //     })
+    //     .catch((error)=>{
+    //         console.log(error)
+    //     })
+    function changeTime(element,text,color,time){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                if(element){
+                    element.textContent = text;
+                    element.style.color = color;
+                    resolve();
+                }
+                else{
+                    reject('this an error');
+                }
+            },time)
+        })
+    }
+    changeTime(heading1,'one','red',1000)
+        .then(()=>changeTime(heading2,'two','green',1000))
+        .then(()=>changeTime(heading3,'three','yellow',1000))
+        .then(()=>changeTime(heading4,'four','rgb',1000))
+        .then(()=>changeTime(heading5,'five','violet',1000))
+        .then(()=>changeTime(heading6,'six','orange',1000))
+        .catch((error)=>{
+            alert(error)
+        })
+    
+</script>
+
+</html>

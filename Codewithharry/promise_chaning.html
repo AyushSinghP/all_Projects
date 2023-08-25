@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    let p1 = new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            console.log("Rsolved after two second");
+            resolve(56);
+        },2000);
+    })
+
+    p1.then((value) => {
+        console.log(value);
+        let p2 = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("promise2")
+            },2000)
+        })
+        return p2
+    }).then((value)=>{
+        console.log("We are done");
+        return 2
+    }).then((value)=>{
+        console.log("We are pakka done");
+    })
+</script>
+</html>

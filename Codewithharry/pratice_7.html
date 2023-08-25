@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    nav {
+        display: flex;
+        background: rgb(190, 226, 226);
+    }
+    nav li {
+        list-style: none;
+        padding: 0 20px;
+    }
+</style>
+</head>
+
+<body>
+   <nav>
+        <li>Home</li>
+        <li>about</li>
+        <li>blog</li>
+        <li>contact </li>
+   </nav>
+   <table>
+        <td>home</td>
+        <tr>Ayush 1</tr>
+        <tr>Ayush 2</tr>
+        <tr>Ayush 3</tr>
+        <tr>Ayush 4</tr>
+   </table> 
+</body>
+<script>
+   document.getElementsByTagName("nav")[0].firstElementChild.style.color = "red"
+   document.getElementsByTagName("nav")[0].firstElementChild.style.color = "green"
+   document.getElementsByTagName("nav")[0].lastElementChild.style.color = "green"
+   Array.from(document.getElementsByTagName("li")).forEach(element => {
+    element.style.background = "red"
+   });
+   
+</script>
+</html>

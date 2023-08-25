@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    async function harry(){
+        let DelhiWeather = new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                resolve("27 Deg")
+            },2000)
+        })
+        let BangaloreWeather = new Promise((resolve, reject)=>{
+            setTimeout(()=>{
+                resolve("20 Deg")
+            },5000)
+        })
+        // DelhiWeather.then(alert);
+        // BangaloreWeather.then(alert);
+        console.log("Fetching delhi weather please wait...")
+        let delhiW = await DelhiWeather
+        console.log("Fetched delhi weather :" + delhiW)
+        console.log("Fetching bangalore weather please wait...")
+        let bangaloreW = await BangaloreWeather
+        console.log("Fetched bangalore weather :" + bangaloreW)
+        return [delhiW, bangaloreW]
+    }
+    console.log("Welcome to weather controle room");
+     let a = harry()
+     a.then((value)=>{
+        console.log(value)
+     })
+</script>
+</html>

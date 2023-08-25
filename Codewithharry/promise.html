@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    let promise = new Promise(function(resolve, reject){
+        alert("Hello");
+        resolve(55);
+    })
+    console.log("Hello");
+    setTimeout(function() {
+        console.log("Hello in 2 seconds")
+    },2000);
+    console.log("My Name is " + "Ayush");
+    console.log(promise)
+</script>
+</html>

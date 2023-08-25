@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let arr = [2,4,5,7];
+    let reduce = arr.reduce((previousValue,currentValue) =>{
+        return previousValue % currentValue
+    })
+    console.log(reduce)
+    // let arr1 = [ 3, 5, 6, 7, 8, 9]
+    // let b = arr1.map((a)=>{
+    //     return a * 5
+    // });
+    // console.log(b);
+    // console.log(arr1);
+        let Aobj = [
+            {Name : "Ayush", Sname : "Panwar"},
+            {Name : "Atharva", Sname : "Rajput"},
+            {Name : "Vijay", Sname : "Sharma"},
+            {Name : "Anshu", Sname : "Patel"}
+        ];
+        let b = Aobj.map((a)=>{
+            return a.Name + " " + a.Sname
+        });
+        console.log(b);
+</script>
+</html>

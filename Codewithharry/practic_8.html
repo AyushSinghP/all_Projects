@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practic_8</title>
+    <style>
+        .bulb{
+            background: yellow;
+        }
+        .bulb-container{
+            height: 341px;
+            width: 341px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="btn">
+        <button onclick="alert('Please Do it Ayush')">Click 1</button>
+        <button onclick="alert('Please Do it Vijay')">Click 2</button>
+        <button onclick="alert('Please Do it Atharva')">Click 3</button>
+
+        <h1>Bookmark</h1>
+        <a href="http://google.com"><button>Google</button></a>
+        <a href="http://twitter.com"><button>Twitter</button></a>
+        <a href="http://fb.com"><button>Fb</button></a>
+
+    </div>
+    <div>
+        <h1>Bookmark 2</h1>
+        <button id="google">Google</button>
+        <button id="twitter">Twitter</button>
+        <button id="fb">Fb</button>
+    </div> -->
+    <div id="bulb" class="bulb bulb-container">
+
+    </div>
+    
+</body>
+<script type="text/javascript">
+    // let a = document.getElementById('google').addEventListener('click',function(){
+    //     window.location = "http://google.com";
+    // })
+    // let b = document.getElementById('twitter').addEventListener('click',function(){
+    //     window.location = "http://twitter.com";
+    // })
+    // let c = document.getElementById('fb').addEventListener('click',function(){
+    //     window.location = "http://fb.com";
+    // })
+    setInterval(async function(){
+        document.querySelector("#bulb").classList.toggle("bulb")
+    },300)
+</script>
+</html>

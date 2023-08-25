@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    async function ayush(){
+        let a = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve();
+            },1000);
+        })
+        let b = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve();
+            },2000);
+        })
+        let c = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve();
+            },3000);
+        })
+        let d = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve();
+            },4000);
+        })
+        let ab = await a
+        console.log("Initalizing Hack Program",a);
+        let bc = await b
+        console.log("Hacking Atharva Username",b);
+        let cd = await c
+        console.log("Username found atharva",c);
+        let df = await d
+        console.log("Connecting to facebook....",d);
+    }
+    ayush();
+</script>
+</html>

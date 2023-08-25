@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    let num = Math.random() * 100;
+    num = Number.parseInt(num);
+    let imp;
+    let score = 100;
+
+    while (imp != num){
+        score = score - 1;
+        imp= prompt("Enter the Number");
+        if (imp == num) {
+            console.log("Congratulation! You guess the correct number."); 
+            console.log(`You guess the actual number in ${100 - score} chances.`); 
+        }
+        else if (imp < num && imp > 0) {
+            console.log("your number is greater than the actual number.")
+        }
+        else if (imp < num && imp > 0) {
+            console.log("your number is smaller than the actual number.")
+        }
+        else{ 
+            console.log("Enter number between 1 to 100")
+        }
+    }
+</script>
+</html>

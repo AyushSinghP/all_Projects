@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>loop</title>
+  </head>
+  <body>
+    <h1>Ayush Singh Panwar{{name}}</h1>
+    {% for i in name %}
+      <h1>{{ i }}</h1>
+    {% endfor %}
+    <table border='1'>
+       <tr>
+         <th>Students Name</th>
+         <th>Mobile Number</th>
+       </tr>
+       {% for i in student_detail %}
+         <tr>
+           <td>{{i.stdname}}</td>
+           <td>{{i.mob}}</td>
+         </tr>
+       {% endfor %}
+    </table>
+    <form method="POST">
+      {% csrf_token %}
+      <div>
+        <label>Num1</label>
+        <input type="text" name="num1" value="{{ n1 }}">
+      </div>
+      <div>
+        <label>Num2</label>
+        <input type="text" name="num2" value="{{ n2 }}">
+      </div>
+      <div>
+         <button type="submit">Click</button>
+      </div>
+      <div>
+        <label>Answer</label>
+        <input type="text" name="num3" value="{{answer}}">
+      </div>
+    </form>
+  </body>
+</html>
